@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "version": "1.1",
+    "background.service_worker": {
+        "scripts": ["background.js"]
+    },
+    "name": "Leads tracker",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
