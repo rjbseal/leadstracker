@@ -6,11 +6,13 @@ const tabBtn = document.getElementById("tab-btn")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 
+// if there are leads in localStorage, render them
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
     renderLeads(myLeads)
 }
 
+// save the url of the current chrome tab
 tabBtn.addEventListener("click", function(){    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url)
@@ -19,6 +21,7 @@ tabBtn.addEventListener("click", function(){
     })
 })
 
+// save the url from form input
 inputBtn.addEventListener("click", function() {
 
     myLeads.push(inputEl.value)
@@ -28,6 +31,7 @@ inputBtn.addEventListener("click", function() {
     
 })
 
+// remove all leads and empty localStorage
 deleteBtn.addEventListener("click", function() {
     localStorage.clear()
     myLeads = []
@@ -41,6 +45,7 @@ deleteBtn.addEventListener("click", function() {
 //     console.log(url)
 // });
 
+// loop through all leads in the array and render them on screen
 function renderLeads(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
