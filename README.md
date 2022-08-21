@@ -20,5 +20,5 @@ you're viewing and save it to localStorage
 3. Toggle 'Developer mode' from the top-right of the page
 4. Click the 'Load unpacked' button
 5. Select the leads tracker directory which you saved in step 1
-6. Click the 'Leads tracker' extension from the chrome browser
+6. Click the 'Leads tracker' extension icon from the chrome browser
 
