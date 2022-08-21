@@ -6,11 +6,14 @@ The difference with Lead Tracker is that you can easily store a list of useful l
 
 ## How it works
 
-When you click on the lead tracker extension icon, you can click on the 'save' button which will automatically copy the url of the current page/tab you are viewing and display it as a clickable link in the Lead Tracker interface.
+When you click on the lead tracker extension icon, you can click on the 'save' button which will save any manually inputted urls typed into the text field.
 
-You can save multiple urls and they will be added to the list. You can clear the list at any time by clicking the 'delete' button. This will also wipe the leads from the browser's local storage.
+You can save multiple urls and they will be added to the list. You can clear the list at any time by clicking the 'delete all' button. This will also wipe the leads from your browser's local storage.
 
-### How to install the Lead Tracker extension
+The 'save tab' button will automatically pull the url of the current tab
+you're viewing and save it to localStorage
+
+## How to install the Lead Tracker extension
 
 1. Download the leadtracker from my git repository, and save locally.
 2. In Chrome, go to chrome://extensions/
