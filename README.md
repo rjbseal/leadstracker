@@ -11,7 +11,7 @@ When you click on the lead tracker extension icon, you can click on the 'save' b
 You can save multiple urls and they will be added to the list. You can clear the list at any time by clicking the 'delete all' button. This will also wipe the leads from your browser's local storage.
 
 The 'save tab' button will automatically pull the url of the current tab
-you're viewing and save it to localStorage
+you're viewing and save it to localStorage. The 'leads' persist between sessions and browser refreshes and will remain until localStorage is purged.
 
 ## How to install the Lead Tracker extension
 
